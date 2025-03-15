@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main(){
+int volume,area,l,choice,r,h,pi=3.14;
+cout<<"insira a sua escolha";
+cin>>choice;
+switch(choice){
+	case 1:cout<<"insira o lado do cubo: ";
+			cin>>l;
+			volume= l*l*l;
+			cout<<"o volume = "<<volume;
+		break;
+	case 2:cout<<"insira o raio: ";
+			cin>>r;
+			area= 4*pi*r*r;
+			cout<<"a area = "<<area;
+		break;	
+	case 3:
+			cout<<"insira h: "<<endl;
+			cin>>h;
+			cout<<"insira raio: ";
+			cin>>r;
+			area=(2*pi*r*h)+(2*pi*r*r);
+			cout<<"a area = "<<area;
+		break;
+	default:
+		cout<<"invalid choice";
+}
+	
+	
+return 0;
+}
